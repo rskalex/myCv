@@ -147,7 +147,7 @@ body{
 //main
 //=============================
 
-.main{
+.wrapper{
     max-width: 1920px;
     height: 100%;
     margin: 0 auto;
@@ -158,7 +158,7 @@ body{
         margin: 0 auto;
         .main-aside{
             min-width: 408px;
-            max-height: 2500px;
+            max-height: 2300px;
             background-color: #fff;
             display: block;
             padding: 135px 5px 30px 88px;
@@ -285,192 +285,194 @@ body{
                 }
             }
         }
-        .main-info{
-            min-width: 922px;
-            background-color: #E1E3E5;
-            max-height: 2500px;
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-            .skills{
-                padding-top: 135px;
-                .skill-boks{
-                    max-width: 50%;
-                    margin: 50px auto;
-                    .skills-item{
-                        width: 450px;
+        .main{
+            .main-info{
+                min-width: 922px;
+                background-color: #E1E3E5;
+                max-height: 2300px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 auto;
+                .skills{
+                    padding-top: 135px;
+                    .skill-boks{
+                        max-width: 50%;
+                        margin: 50px auto;
+                        .skills-item{
+                            width: 450px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 25px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            .skill-name{
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                @include fontsize(23px, 25px);
+                                letter-spacing: 0.01em;                            
+                                color: #333333;
+                            }
+                            progress {
+                                border:0;
+                                width: 300px;
+                                height: 15px;
+                                border-radius: 5px;
+                                background: #f1f1f1;
+                            }
+                            progress::-webkit-progress-bar {
+                                width: 300px;
+                                height: 20px;
+                                border-radius: 5px;
+                                background: #f1f1f1;
+                            }
+                            progress::-webkit-progress-value {
+                                border-radius: 5px;
+                                background: #157698;
+                            }
+                            progress::-moz-progress-bar {
+                                border-radius: 5px;
+                                background: #157698;
+                            }
+                        }
+                    }
+                }
+                .tools{
+                    .tool-boks{
+                        max-width: 50%;
+                        margin: 50px auto;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        margin-bottom: 25px;
-                        &:last-child{
+                        .tool-item{                        
+                            .tool-name{
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                @include fontsize(23px, 25px);
+                                letter-spacing: 0.01em;                            
+                                color: #333333;
+                                margin-right: 25px;
+                            }
+                           
+                        }
+                    }
+                }
+                .projects{
+                    .project-boks{
+                        width: 100%;
+                        padding: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .project-item{
+                            width: 30%;
+                            height: 200px;
+                            border-radius: 15px;
+                            transition: all 0.2s linear;
+                            margin-bottom: 40px;
+                            &:hover{
+                                cursor: pointer;
+                                box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
+                                -webkit-box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
+                                -moz-box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
+                            }
+                            a{
+                                width: 100%;
+                                height: 100%; 
+                                display: inline-flex;                           
+                            }
+                            .project-name{
+                                font-family: 'Poppins';
+                                font-weight: 400;
+                                font-style: italic;
+                                @include fontsize(23px, 25px);
+                                letter-spacing: 0.01em;                            
+                                color: #333333;
+                                text-align: center;
+                                margin-top: 15px;
+                            }
+                        }
+                        .item-1{
+                            background: url("/assets/images/project-1.jpeg");
+                            background-size: cover;
+                        }
+                        .item-2{
+                            background: url("/assets/images/project-2.jpeg");
+                            background-size: cover;
+                        }
+                        .item-3{
+                            background: url("/assets/images/project-3.jpeg");
+                            background-size: cover;
+                        }
+                        .item-4{
+                            background: url("/assets/images/project-4.jpeg");
+                            background-size: cover;
+                            background-position: center;
                             margin-bottom: 0;
                         }
-                        .skill-name{
-                            font-family: 'Poppins';
-                            font-weight: 500;
-                            @include fontsize(23px, 25px);
-                            letter-spacing: 0.01em;                            
-                            color: #333333;
+                        .item-5{
+                            background: url("/assets/images/project-5.jpeg");
+                            background-size: cover;
+                            margin-bottom: 0;
+                            
                         }
-                        progress {
-                            border:0;
-                            width: 300px;
-                            height: 15px;
-                            border-radius: 5px;
-                            background: #f1f1f1;
-                        }
-                        progress::-webkit-progress-bar {
-                            width: 300px;
-                            height: 20px;
-                            border-radius: 5px;
-                            background: #f1f1f1;
-                        }
-                        progress::-webkit-progress-value {
-                            border-radius: 5px;
-                            background: #157698;
-                        }
-                        progress::-moz-progress-bar {
-                            border-radius: 5px;
-                            background: #157698;
+                        .item-6{
+                            visibility: hidden;
                         }
                     }
                 }
-            }
-            .tools{
-                .tool-boks{
-                    max-width: 50%;
-                    margin: 50px auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    .tool-item{                        
-                        .tool-name{
-                            font-family: 'Poppins';
-                            font-weight: 500;
+                .code{
+                    .code-block{
+                        padding: 35px 0;
+                        pre{
                             @include fontsize(23px, 25px);
-                            letter-spacing: 0.01em;                            
-                            color: #333333;
-                            margin-right: 25px;
-                        }
-                       
-                    }
-                }
-            }
-            .projects{
-                .project-boks{
-                    width: 100%;
-                    padding: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    .project-item{
-                        width: 30%;
-                        height: 200px;
-                        border-radius: 15px;
-                        transition: all 0.2s linear;
-                        margin-bottom: 40px;
-                        &:hover{
-                            cursor: pointer;
-                            box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
-                            -webkit-box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
-                            -moz-box-shadow: 0px 0px 9px 5px rgba(17,17,136,0.35);
-                        }
-                        a{
-                            width: 100%;
-                            height: 100%; 
-                            display: inline-flex;                           
-                        }
-                        .project-name{
-                            font-family: 'Poppins';
-                            font-weight: 400;
                             font-style: italic;
-                            @include fontsize(23px, 25px);
                             letter-spacing: 0.01em;                            
                             color: #333333;
-                            text-align: center;
-                            margin-top: 15px;
-                        }
-                    }
-                    .item-1{
-                        background: url("/assets/images/project-1.jpeg");
-                        background-size: cover;
-                    }
-                    .item-2{
-                        background: url("/assets/images/project-2.jpeg");
-                        background-size: cover;
-                    }
-                    .item-3{
-                        background: url("/assets/images/project-3.jpeg");
-                        background-size: cover;
-                    }
-                    .item-4{
-                        background: url("/assets/images/project-4.jpeg");
-                        background-size: cover;
-                        background-position: center;
-                        margin-bottom: 0;
-                    }
-                    .item-5{
-                        background: url("/assets/images/project-5.jpeg");
-                        background-size: cover;
-                        margin-bottom: 0;
-                        
-                    }
-                    .item-6{
-                        visibility: hidden;
-                    }
-                }
-            }
-            .code{
-                .code-block{
-                    padding: 35px 0;
-                    pre{
-                        @include fontsize(23px, 25px);
-                        font-style: italic;
-                        letter-spacing: 0.01em;                            
-                        color: #333333;
-                        span{
-                            color: red;
-                        }
-                        .style1{
-                            color: orange;
-                        }
-                        .style2{
-                            color: blue;
+                            span{
+                                color: red;
+                            }
+                            .style1{
+                                color: orange;
+                            }
+                            .style2{
+                                color: blue;
+                            }
                         }
                     }
                 }
-            }
-            .hobbies{
-                background-color: #4C4E50;
-                width: 100%;
-                padding: 50px auto;
-                flex: 1 0 auto;
-                .hobbies-title{
-                    color: #fff;
-                    padding-top: 50px;
-                    &:before{
-                        background-color: #fff;
-                        top: 50px;
+                .hobbies{
+                    background-color: #4C4E50;
+                    width: 100%;
+                    padding: 50px auto;
+                    flex: 1 0 auto;
+                    .hobbies-title{
+                        color: #fff;
+                        padding-top: 50px;
+                        &:before{
+                            background-color: #fff;
+                            top: 50px;
+                        }
                     }
-                }
-                .hobby-boks{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 70%;
-                    margin: 50px auto;
-                    .hobby-item{
+                    .hobby-boks{
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
-                        p{
-                            margin-top: 15px;
-                            color: #fff;
-                            font-weight: 400;
-                            @include fontsize(23px, 25px);
-                            letter-spacing: 0.01em;  
+                        justify-content: space-between;
+                        width: 70%;
+                        margin: 50px auto;
+                        .hobby-item{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            p{
+                                margin-top: 15px;
+                                color: #fff;
+                                font-weight: 400;
+                                @include fontsize(23px, 25px);
+                                letter-spacing: 0.01em;  
+                            }
                         }
                     }
                 }

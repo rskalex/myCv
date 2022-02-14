@@ -48,8 +48,8 @@
         </div>
     </header> <!--header-->
 
-    <main class="main">
-        <div class="main-container container">
+    <main class="wrapper">
+        <div class="wrapper-container container">
             <aside class="main-aside">
 
                 <div class="main-about">
@@ -103,106 +103,107 @@
                 
             </aside>
 
-            <section class="main-info">
-                
-                <div class="skills">
-                    <h2 class="skills-title title">skills</h2>
-                    <ul class="skill-boks">
-                        <li class="skills-item">
-                            <p class="skill-name">HTML5</p>
-                            <progress max="100" value="90"></progress>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill-name">CSS3</p>
-                            <progress max="100" value="75"></progress>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill-name">JavaScript</p>
-                            <progress max="100" value="40"></progress>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="tools">
-                    <h2 class="tools-title title">tools</h2>
-                    <ul class="tool-boks">
-                        <li class="tool-item">
-                            <p class="tool-name">FlexBox</p>
-                        </li>
-                        <li class="tool-item">
-                            <p class="tool-name">SCSS/SASS</p>
-                        </li>
-                        <li class="tool-item">
-                            <p class="tool-name">Git</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="projects">
-                    <h2 class="project-title title">tools</h2>
-                    <ul class="project-boks">
-                        <li class="project-item item-1">
-                            <a href="https://rskalex.github.io/ActiveBox/src/">
-                            </a>
-                            <p class="project-name">ActiveBox</p>
-                        </li>
-                        <li class="project-item item-2">
-                            <a href="https://rskalex.github.io/Luxtrader/src/">
-                            </a>
-                            <p class="project-name">Luxtrader</p>
-                        </li>
-                        <li class="project-item item-3">
-                            <a href="https://rskalex.github.io/Wildlife/"></a>
-                            <p class="project-name">Wildlife</p>
-                        </li>
-                        <li class="project-item item-4">
-                            <a href="https://rskalex.github.io/virtual-piano/index.html">
-                            </a>
-                            <p class="project-name">Virtual Piano</p>
-                        </li>
-                        <li class="project-item item-5">
-                            <a href="https://rskalex.github.io/OnlineCinema/">
-                            </a>
-                            <p class="project-name">Onlice Cinema</p>
-                        </li>
-                        <li class="project-item item-6">
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="code">
-                    <h2 class="code-title title">code example</h2>
-                    <div class="code-block">
-                        <pre>
-                            <span class="style2">function</span> <span class="style1">solution</span>(<span class="style1">str</span>, <span class='style1'>ending</span>){
-                                <span class="style2">if</span>(ending == '') {
-                                  <span class="style2">return</span> <span>true</span>
-                                } <span class="style2">else</span> {
-                                  <span class="style2">return</span> str.slice(-ending.length) == ending ? <span>true</span> : <span></span>;
-                                }
-                              }                    
-                    </pre>
+            <main class="main">
+                <section class="main-info">
+                    <div class="skills">
+                        <h2 class="skills-title title">skills</h2>
+                        <ul class="skill-boks">
+                            <li class="skills-item">
+                                <p class="skill-name">HTML5</p>
+                                <progress max="100" value="90"></progress>
+                            </li>
+                            <li class="skills-item">
+                                <p class="skill-name">CSS3</p>
+                                <progress max="100" value="75"></progress>
+                            </li>
+                            <li class="skills-item">
+                                <p class="skill-name">JavaScript</p>
+                                <progress max="100" value="40"></progress>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="hobbies">
-                    <h2 class="hobbies-title title">hobbies</h2>
-                    <ul class="hobby-boks block">
-                        <li class="hobby-item">
-                            <img src="/assets/icons/hobby-item-1.png" alt="">
-                            <p class="hobby-name">Football</p>
-                        </li>
-                        <li class="hobby-item">
-                            <img src="/assets/icons/hobby-item.png" alt="">
-                            <p class="hobby-name">Travel</p>
-                        </li>
-                        <li class="hobby-item">
-                            <img src="/assets/icons/hobby-item-2.png" alt="">
-                            <p class="hobby-name">Gaming</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    
+                    <div class="tools">
+                        <h2 class="tools-title title">tools</h2>
+                        <ul class="tool-boks">
+                            <li class="tool-item">
+                                <p class="tool-name">FlexBox</p>
+                            </li>
+                            <li class="tool-item">
+                                <p class="tool-name">SCSS/SASS</p>
+                            </li>
+                            <li class="tool-item">
+                                <p class="tool-name">Git</p>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="projects">
+                        <h2 class="project-title title">tools</h2>
+                        <ul class="project-boks">
+                            <li class="project-item item-1">
+                                <a href="https://rskalex.github.io/ActiveBox/src/">
+                                </a>
+                                <p class="project-name">ActiveBox</p>
+                            </li>
+                            <li class="project-item item-2">
+                                <a href="https://rskalex.github.io/Luxtrader/src/">
+                                </a>
+                                <p class="project-name">Luxtrader</p>
+                            </li>
+                            <li class="project-item item-3">
+                                <a href="https://rskalex.github.io/Wildlife/"></a>
+                                <p class="project-name">Wildlife</p>
+                            </li>
+                            <li class="project-item item-4">
+                                <a href="https://rskalex.github.io/virtual-piano/index.html">
+                                </a>
+                                <p class="project-name">Virtual Piano</p>
+                            </li>
+                            <li class="project-item item-5">
+                                <a href="https://rskalex.github.io/OnlineCinema/">
+                                </a>
+                                <p class="project-name">Onlice Cinema</p>
+                            </li>
+                            <li class="project-item item-6">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="code">
+                        <h2 class="code-title title">code example</h2>
+                        <div class="code-block">
+                            <pre>
+                                <span class="style2">function</span> <span class="style1">solution</span>(<span class="style1">str</span>, <span class='style1'>ending</span>){
+                                    <span class="style2">if</span>(ending == '') {
+                                      <span class="style2">return</span> <span>true</span>
+                                    } <span class="style2">else</span> {
+                                      <span class="style2">return</span> str.slice(-ending.length) == ending ? <span>true</span> : <span></span>;
+                                    }
+                                  }                    
+                        </pre>
+                        </div>
+                    </div>
+    
+                    <div class="hobbies">
+                        <h2 class="hobbies-title title">hobbies</h2>
+                        <ul class="hobby-boks block">
+                            <li class="hobby-item">
+                                <img src="/assets/icons/hobby-item-1.png" alt="">
+                                <p class="hobby-name">Football</p>
+                            </li>
+                            <li class="hobby-item">
+                                <img src="/assets/icons/hobby-item.png" alt="">
+                                <p class="hobby-name">Travel</p>
+                            </li>
+                            <li class="hobby-item">
+                                <img src="/assets/icons/hobby-item-2.png" alt="">
+                                <p class="hobby-name">Gaming</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
         </div>
     </main>
 
