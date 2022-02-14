@@ -3,21 +3,23 @@
 @import 'mixins';
 
 html{
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     font-family: $fontfamily;
+    overflow-x:hidden; 
 }
 body{
     margin: 0 auto;
 }
 
-.body.lock{
-    @media (max-width: 992px){
-        overflow: hidden;
-    }
-}
+// .body.lock{
+//     @media (max-width: 992px){
+//         overflow: hidden;
+//     }
+// }
 
 .container{
     width: 1400px;
+    height: 100%;
 }
 
 //title
@@ -151,7 +153,6 @@ body{
     max-width: 1920px;
     height: 100%;
     margin: 0 auto;
-    flex: 1 1 auto;
     &-container{
         width: 1400px;
         display: flex;
@@ -292,7 +293,7 @@ body{
                 max-height: 2300px;
                 display: flex;
                 flex-direction: column;
-                flex: 1 1 auto;
+                // flex: 1 1 auto;
                 .skills{
                     padding-top: 135px;
                     .skill-boks{
@@ -395,25 +396,25 @@ body{
                             }
                         }
                         .item-1{
-                            background: url("/assets/images/project-1.jpeg");
+                            background: url("/assets/images/project-1.jpeg") no-repeat;
                             background-size: cover;
                         }
                         .item-2{
-                            background: url("/assets/images/project-2.jpeg");
+                            background: url("/assets/images/project-2.jpeg") no-repeat;
                             background-size: cover;
                         }
                         .item-3{
-                            background: url("/assets/images/project-3.jpeg");
+                            background: url("/assets/images/project-3.jpeg") no-repeat;
                             background-size: cover;
                         }
                         .item-4{
-                            background: url("/assets/images/project-4.jpeg");
+                            background: url("/assets/images/project-4.jpeg") no-repeat;
                             background-size: cover;
                             background-position: center;
                             margin-bottom: 0;
                         }
                         .item-5{
-                            background: url("/assets/images/project-5.jpeg");
+                            background: url("/assets/images/project-5.jpeg") no-repeat;
                             background-size: cover;
                             margin-bottom: 0;
                             
@@ -447,7 +448,6 @@ body{
                     background-color: #4C4E50;
                     width: 100%;
                     padding: 50px auto;
-                    flex: 1 0 auto;
                     .hobbies-title{
                         color: #fff;
                         padding-top: 50px;
@@ -486,14 +486,14 @@ body{
 
 .footer{  
     max-width: 1920px;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     &-container{
         width: 1400px;
-        height: 100px;
+        min-height: 100px;
         padding: 0 20px;
         background-color: #E1E3E5;
         .footer-wrapper{
@@ -510,7 +510,7 @@ body{
             }
             a{
                 width: 100px;
-                height: 100px;
+                min-height: 100px;
                 &:hover{
                     cursor: pointer;
                 }
@@ -518,7 +518,7 @@ body{
             a svg{
                 transform: rotate(-30deg);
                 width: 100px;
-                height: 100px;
+                height: 80px;
             }
             .git svg{
                 width: 50px;
