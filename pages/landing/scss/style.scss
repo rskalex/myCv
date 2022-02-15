@@ -122,7 +122,9 @@ body{
         .avatar{
             width: 250px;
             height: 250px;
-            background-color: green;
+            background-color: #fff;
+            // background: url("/assets/images/avatar.PNG") no-repeat;
+            // background-size: cover;
             position: absolute;
             left: 158px;
             bottom: 0;
@@ -137,10 +139,13 @@ body{
                 bottom: -70px;
                 z-index: -1;
             }
-            img{
+            .avatar-foto{
                 z-index: 500;
                 width: 100%;
                 height: 100%;
+                background: url('/assets/images/avatar.PNG') no-repeat;
+                background-size: cover;
+                background-position: center;
             }
         }
     }
