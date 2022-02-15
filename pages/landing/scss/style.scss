@@ -159,16 +159,17 @@ body{
     height: 100%;
     margin: 0 auto;
     &-container{
-        width: 1400px;
+        max-width: 1400px;
         display: flex;
         margin: 0 auto;
         .main-aside{
-            min-width: 408px;
+            max-width: 408px;
             max-height: 2300px;
             background-color: #fff;
             display: block;
             padding: 135px 5px 30px 88px;
             .main-about{
+                width: 100%;
                 .about-text{
                     font-family: 'Poppins';
                     @include fontsize(23px, 25px);
@@ -179,6 +180,7 @@ body{
                 }
             }
             .contact{
+                width: 100%;
                 .contact-title{
                     font-family: 'Poppins';
                     @include fontsize(27px, 30px);
@@ -214,6 +216,7 @@ body{
                 } 
             }
             .education{
+                width: 100%;
                 .education-block{
                     .education-item{
                         .place{
@@ -251,6 +254,7 @@ body{
                 }
             }
             .sertificats{
+                width: 100%;
                 &-block{
                     display: flex;
                     flex-direction: column;                    
@@ -273,6 +277,7 @@ body{
                 }
             }
             .languages{
+                width: 100%;
                 &-block{
                     display: flex;
                     flex-direction: column; 
@@ -292,9 +297,10 @@ body{
             }
         }
         .main{
+            width: 992px;
+            background-color: #E1E3E5;
             .main-info{
-                min-width: 922px;
-                background-color: #E1E3E5;
+                width: 100%;
                 max-height: 2300px;
                 display: flex;
                 flex-direction: column;
@@ -346,7 +352,8 @@ body{
                 }
                 .tools{
                     .tool-boks{
-                        max-width: 50%;
+                        width: 70%;
+                        padding: 0 50px;
                         margin: 50px auto;
                         display: flex;
                         align-items: center;
